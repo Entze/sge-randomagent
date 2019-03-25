@@ -19,7 +19,7 @@ dependencies {
 
 jar {
     manifest {
-        attributes 'Agent-Class': 'dev.entze.sge.agent.randomagent'
+        attributes 'Agent-Class': 'dev.entze.sge.agent.randomagent.RandomAgent'
     }
 }
 
