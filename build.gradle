@@ -19,7 +19,9 @@ dependencies {
 
 jar {
     manifest {
+        attributes 'Sge-Type': 'agent'
         attributes 'Agent-Class': 'dev.entze.sge.agent.randomagent.RandomAgent'
+        attributes 'Agent-Name' : 'RandomAgent'
     }
 }
 
