@@ -20,7 +20,7 @@ public class RandomAgent<G extends Game<A, ?>, A> implements GameAgent<G, A> {
   }
 
   @Override
-  public A calculateNextAction(G game, long calculationTime, TimeUnit timeUnit) {
+  public A computeNextAction(G game, long computationTime, TimeUnit timeUnit) {
     List<A> possibleActions = new ArrayList<>(game.getPossibleActions());
     return possibleActions.get(random.nextInt(possibleActions.size()));
   }
