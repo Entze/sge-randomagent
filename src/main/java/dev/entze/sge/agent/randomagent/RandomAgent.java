@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
-public class RandomAgent<G extends Game<A, ?>, A> implements GameAgent<G, A> {
+public class RandomAgent<G extends Game<? extends A, ?>, A> implements GameAgent<G, A> {
 
   private final Random random;
 
