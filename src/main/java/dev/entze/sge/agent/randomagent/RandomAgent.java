@@ -9,9 +9,11 @@ import java.util.concurrent.TimeUnit;
 
 public class RandomAgent<G extends Game<A, ?>, A> implements GameAgent<G, A> {
 
+  private static int INSTANCE_NR_COUNTER = 1;
+
   private final Logger log;
   private final Random random;
-
+  private final int instanceNr;
 
   public RandomAgent() {
     this(new Random(), null);
@@ -24,6 +26,7 @@ public class RandomAgent<G extends Game<A, ?>, A> implements GameAgent<G, A> {
   public RandomAgent(Random random, Logger log) {
     this.random = random;
     this.log = log;
+    this.instanceNr = INSTANCE_NR_COUNTER++;
   }
 
   @Override
@@ -33,6 +36,6 @@ public class RandomAgent<G extends Game<A, ?>, A> implements GameAgent<G, A> {
 
   @Override
   public String toString() {
-    return "RandomAgent";
+    return String.format("%s%d", "RandomAgent#", instanceNr);
   }
 }
