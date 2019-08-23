@@ -36,6 +36,9 @@ public class RandomAgent<G extends Game<A, ?>, A> implements GameAgent<G, A> {
 
   @Override
   public String toString() {
-    return String.format("%s%d", "RandomAgent#", instanceNr);
+    if (instanceNr > 1 || RandomAgent.INSTANCE_NR_COUNTER > 2) {
+      return String.format("%s%d", "RandomAgent#", instanceNr);
+    }
+    return "RandomAgent";
   }
 }
