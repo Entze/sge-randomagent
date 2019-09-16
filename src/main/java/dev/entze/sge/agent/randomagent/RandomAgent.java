@@ -1,9 +1,9 @@
 package dev.entze.sge.agent.randomagent;
 
-import dev.entze.sge.agent.GameAgent;
-import dev.entze.sge.engine.Logger;
-import dev.entze.sge.game.Game;
-import dev.entze.sge.util.Util;
+import at.ac.tuwien.ifs.sge.agent.GameAgent;
+import at.ac.tuwien.ifs.sge.engine.Logger;
+import at.ac.tuwien.ifs.sge.game.Game;
+import at.ac.tuwien.ifs.sge.util.Util;
 import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
