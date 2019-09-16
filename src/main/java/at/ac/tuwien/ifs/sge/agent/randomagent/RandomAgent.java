@@ -1,4 +1,4 @@
-package dev.entze.sge.agent.randomagent;
+package at.ac.tuwien.ifs.sge.agent.randomagent;
 
 import at.ac.tuwien.ifs.sge.agent.GameAgent;
 import at.ac.tuwien.ifs.sge.engine.Logger;
