@@ -3,7 +3,7 @@ plugins {
     id 'idea'
 }
 
-group 'dev.entze'
+group 'at.ac.tuwien.ifs.sge'
 version '0.0.0'
 
 sourceCompatibility = 1.11
